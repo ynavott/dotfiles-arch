@@ -26,4 +26,13 @@ nitrogen --restore &
 picom --experimental-backends &
 
 # Notifications
-dunst
+dunst &
+
+# Wifi
+nm-applet &
+
+# Keyboard layout switcher
+gxkb &
+
+# Dropbox
+dropbox
