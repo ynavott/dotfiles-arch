@@ -1,0 +1,21 @@
+# username
+[user]
+	name = ynavott
+	email = yoavnavott@gmail.com
+
+# colorize output
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+
+# password timeout length
+#[credential]
+#	helper = cache --timeout=7200
+[credential "https://github.com"]
+	username = ynavott
+[credential]
+	helper = /usr/bin/pass-git-helper
