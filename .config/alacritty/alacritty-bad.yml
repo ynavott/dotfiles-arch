@@ -1,0 +1,71 @@
+# Font configuration (changes require restart)
+font:
+  # The size to use.
+  size: 12
+  # The normal (roman) font face to use.
+  normal:
+    family: MesloLGS NF
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: MesloLGS NF
+    # Style can be specified to pick a specific face.
+    # style: Bold
+
+  # The italic font face
+  italic:
+    family: MesloLGS NF
+    # Style can be specified to pick a specific face.
+    # style: Italic
+    
+# Colors (Flat Remix)
+colors:
+  # Default colors
+  primary:
+    background: '#272A34'
+    foreground: '#FFFFFF'
+    #background: '#282a36'
+    #foreground: '#f8f8f2'
+
+  # Normal colors
+  normal:
+    black:   '#1F2229'
+    red:     '#D41919'
+    green:   '#5EBDAB'
+    yellow:  '#FEA44C'
+    blue:    '#367BF0'
+    magenta: '#BF2E5D'
+    cyan:    '#49AEE6'
+    white:   '#E6E6E6'
+    
+  # Bright colors
+  bright:
+    black:   '#8C42AB'
+    red:     '#EC0101'
+    green:   '#47D4B9'
+    yellow:  '#FF8A18'
+    blue:    '#277FFF'
+    magenta: '#D71655'
+    cyan:    '#05A1F7'
+    white:   '#FFFFFF'
+
+# Window Size
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  dimensions:
+    columns: 80
+    lines: 20
+
+# Scroll history length
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 50000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
