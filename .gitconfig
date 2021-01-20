@@ -18,4 +18,4 @@
 [credential "https://github.com"]
 	username = ynavott
 [credential]
-	helper = /usr/bin/pass-git-helper
+	helper = /usr/lib/git-core/git-credential-libsecret
