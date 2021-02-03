@@ -315,107 +315,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>PCManFM</name>
-        </startupnotify>
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <!-- Screenshot of Area or Window -->
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Flameshot</name>
-        </startupnotify>
-        <command>flameshot gui</command>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Alacritty</name>
-        </startupnotify>
-        <command>alacritty</command>
-      </action>
-    </keybind>
-    <keybind key="W-b">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Firefox</name>
-        </startupnotify>
-        <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="W-r">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Reconfigure</name>
-        </startupnotify>
-        <command>openbox --reconfigure</command>
-      </action>
-    </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>~/.config/rofi/bin/launcher_colorful</command>
-      </action>
-    </keybind>
-    <!-- Or -->
-    <keybind key="W-x">
-      <action name="Execute">
-        <command>~/.config/rofi/bin/powermenu</command>
-      </action>
-    </keybind>
-    <!-- Volume Adjust -->
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>amixer set Master 5%+</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>amixer set Master 5%-</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>amixer set Master toggle</command>
-      </action>
-    </keybind>
-    <!-- Media Keys -->
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>playerctl next</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
-      <action name="Execute">
-        <command>playerctl play-pause-</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>playerctl previous</command>
-      </action>
-    </keybind>
-    <!-- Brightness adjust -->
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight -inc 10</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -dec 10</command>
-      </action>
-    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -805,7 +704,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>

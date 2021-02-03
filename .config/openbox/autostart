@@ -16,6 +16,9 @@
 #
 #xfce-mcs-manager &
 
+# Keyboard shortcuts
+sxhkd &
+
 # Tint2 Panel
 tint2 &
 
@@ -32,7 +35,4 @@ dunst &
 nm-applet &
 
 # Keyboard layout switcher
-gxkb &
-
-# Dropbox
-dropbox
+gxkb

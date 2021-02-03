@@ -1,0 +1,80 @@
+# # # Openbox Stuff
+
+# # Window Management
+
+# # Other Actions
+# Reconfigure Openbox
+super + r
+ openbox --reconfigure
+
+###################################################
+
+# # # Prompts, Menus, Rofi, etc.
+
+# # Rofi
+# Execute Applications Popup
+super + p
+ ~/.config/rofi/bin/launcher_colorful
+
+# Power Menu Prompt
+super + x
+ ~/.config/rofi/bin/powermenu
+
+###################################################
+
+# # Application bindings
+# PCManFM
+super + e
+ pcmanfm
+
+# Flameshot
+Print
+ flameshot gui
+
+# Alacritty
+control + grave
+ alacritty
+
+# Firefox
+super + b
+ firefox
+
+###################################################
+
+# # # Adjustments
+
+# # Volume
+# Volume Up
+XF86AudioRaiseVolume
+ amixer set Master 5%+
+
+# Volume Down
+XF86AudioLowerVolume
+ amixer set Master 5%-
+
+# Mute
+XF86AudioMute
+ amixer set Master toggle
+
+# # Media Keys
+# Media Next
+XF86AudioNext
+ playerctl next
+
+# Media Play
+XF86AudioPlay
+ playerctl play-pause
+
+# Media Previous
+XF86AudioPrev
+ playerctl previous
+
+
+# # Brightness
+# Brightness Up
+XF86MonBrightnessUp
+ xbacklight -inc 10
+
+# Brightness Down
+XF86MonBrightnessDown
+ xbacklight -dec 10
