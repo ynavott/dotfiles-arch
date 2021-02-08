@@ -16,8 +16,14 @@
 #
 #xfce-mcs-manager &
 
+# XFCE Power manager
+xfce4-power-manager &
+
 # Keyboard shortcuts
 sxhkd &
+
+# Polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Tint2 Panel
 tint2 &

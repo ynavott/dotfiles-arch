@@ -1,0 +1,19 @@
+/** Basic config file **/
+
+configuration {
+  display-run:        "  ";
+  display-drun:       "  ";
+  display-window:     "  ";
+  display-combi:      "  ";
+  display-ssh:        "  ";
+  display-calc:       "  ";
+  display-keys:       "  ";
+  show-icons:         true;
+  icon-theme:         "Papirus-Dark";
+  font:               "mono 13";
+  width:              40;
+  combi-modi:         "window,drun";
+  modi:               "combi,run,calc,drun,window";
+  window-format:      " {w} {c}   {t}";
+}
+@import "Arc-Dark-Opaque.rasi"

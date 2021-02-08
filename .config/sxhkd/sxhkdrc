@@ -13,12 +13,35 @@ super + r
 
 # # Rofi
 # Execute Applications Popup
-super + p
- ~/.config/rofi/bin/launcher_colorful
+#super + p
+# ~/.config/rofi/bin/launcher_colorful
 
 # Power Menu Prompt
 super + x
  ~/.config/rofi/bin/powermenu
+
+# Window Switcher
+super + Tab
+ window-switcher
+
+# run + window switcher
+super + {Return,i}
+ rofi -show {run,window}
+
+# Combi (window+drun)
+super + p
+ rofi-combi
+# drun
+super + o
+ rofi-drun
+
+# Keys
+super + shift + h
+ rofi-keys
+
+# Calculator
+super + shift + c
+ rofi-calc
 
 ###################################################
 
