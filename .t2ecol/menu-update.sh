@@ -17,9 +17,9 @@ color_sel_fg        = #eeeeee 100
 EOF
 
 cat <<'EOF' >${menu_file}
-Check updates,t2ec --Cyay
+Check updates,t2ec --C yay
 Show pending,t2ec --update -O
-Update,t2ec --update -Ualacritty:yay
+Update,t2ec --update -U alacritty:yay
 EOF
 
 jgmenu --config-file=${config_file} --csv-file=${menu_file}

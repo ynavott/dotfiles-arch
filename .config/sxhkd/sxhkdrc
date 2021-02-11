@@ -25,11 +25,11 @@ super + Tab
  window-switcher
 
 # run + window switcher
-super + {Return,i}
+super + {p,i}
  rofi -show {run,window}
 
 # Combi (window+drun)
-super + p
+super + Return
  rofi-combi
 # drun
 super + o

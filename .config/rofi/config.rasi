@@ -1,13 +1,13 @@
 /** Basic config file **/
 
 configuration {
-  display-run:        "  ";
-  display-drun:       "  ";
-  display-window:     "  ";
-  display-combi:      "  ";
-  display-ssh:        "  ";
-  display-calc:       "  ";
-  display-keys:       "  ";
+  display-run:        "   ";
+  display-drun:       "   ";
+  display-window:     "   ";
+  display-combi:      "   ";
+  display-ssh:        "   ";
+  display-calc:       "   ";
+  display-keys:       "   ";
   show-icons:         true;
   icon-theme:         "Papirus-Dark";
   font:               "mono 13";

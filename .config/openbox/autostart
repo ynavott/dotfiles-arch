@@ -41,4 +41,10 @@ dunst &
 nm-applet &
 
 # Keyboard layout switcher
-gxkb
+gxkb &
+
+# Clipboard manager
+copyq &
+
+# Screenshot capability
+flameshot

@@ -137,6 +137,9 @@ prompt {
     padding: 0 0 0 0;
     text-color: @normal-foreground;
 }
+element-icon {
+    size:    2ch;
+}
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
