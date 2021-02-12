@@ -155,8 +155,9 @@ source $ZSH/oh-my-zsh.sh
   # nvim alias
   alias v='nvim'
 
-  #tlmgr alias
-  alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+  # TEXMFDIST definition and tlmgr alias
+  export TEXMFDIST="/usr/share/texmf-dist"
+  alias tlmgr='$TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 
 # pyenv stuff
 eval "$(pyenv init -)"
@@ -167,9 +168,6 @@ eval "$(register-python-argcomplete pipx)"
 
 # Remove dupes on arrow up
 setopt HIST_FIND_NO_DUPS
-
-# TEXMFDIST definition
-#export TEXMFDIST="/usr/share/texmf-dist"
 
 # you-should-use position
 export YSU_MESSAGE_POSITION="after"
