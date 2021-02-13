@@ -166,6 +166,12 @@ eval "$(pyenv init -)"
 autoload -U +X bashcompinit && bashcompinit
 eval "$(register-python-argcomplete pipx)"
 
+# kitty completions
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+
 # Remove dupes on arrow up
 setopt HIST_FIND_NO_DUPS
 

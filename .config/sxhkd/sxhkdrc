@@ -54,9 +54,9 @@ super + e
 Print
  flameshot gui
 
-# Alacritty
+# Terminal
 control + grave
- alacritty
+ $TERMINAL
 
 # Firefox
 super + b
