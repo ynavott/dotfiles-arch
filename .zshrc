@@ -159,6 +159,9 @@ source $ZSH/oh-my-zsh.sh
   export TEXMFDIST="/usr/share/texmf-dist"
   alias tlmgr='$TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 
+  # Kitty kittens
+  alias ktn='kitty +kitten'
+
 # pyenv stuff
 eval "$(pyenv init -)"
 
