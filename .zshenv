@@ -21,9 +21,6 @@ export BROWSER="firefox"
 export VIDEO="mpv"
 export IMAGE="sxiv"
 
-# zsh history file path
-export HISTFILE="$XDG_DATA_HOME"/zsh/zsh_history
-
 # Qt5 appearance with qt5ct
 export QT_QPA_PLATFORMTHEME="qt5ct"
 

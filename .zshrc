@@ -130,7 +130,7 @@ source $ZSH/oh-my-zsh.sh
   alias ls='ls --color=auto'
   alias ls='lsd --group-dirs first'
   alias tree='lsd --tree'
-  alias ll='ls -l'
+  alias ll='ls -l --total-size'
   alias la='ls -A'
   alias lla='ls -lA'
   alias l='ls -F'
@@ -175,8 +175,12 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
-# Remove dupes on arrow up
+# zsh history stuff
+export HISTFILE="$XDG_DATA_HOME"/zsh/zsh_history
+export HISTSIZE=100000
+export SAVEHIST=$HISTSIZE
 setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
 
 # you-should-use position
 export YSU_MESSAGE_POSITION="after"
