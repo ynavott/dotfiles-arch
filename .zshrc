@@ -117,63 +117,70 @@ source $ZSH/oh-my-zsh.sh
 
 # --------------------------------- MANUAL STUFF -----------------------------------
 # Aliases
-  # color
-  alias grep='grep --color=auto'
-  alias fgrep='fgrep --color=auto'
-  alias egrep='egrep --color=auto'
-  alias diff='diff --color=auto'
-  alias ip='ip --color=auto'
-  alias pacman='pacman --color=auto'
-  alias yay="paru"
+    # color
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+    alias diff='diff --color=auto'
+    alias ip='ip --color=auto'
+    alias pacman='pacman --color=auto'
+    alias yay="paru"
 
-  # ls
-  alias ls='ls --color=auto'
-  alias ls='lsd --group-dirs first'
-  alias tree='lsd --tree'
-  alias ll='ls -l --total-size'
-  alias la='ls -A'
-  alias lla='ls -lA'
-  alias l='ls -F'
+    # ls
+    alias ls='ls --color=auto'
+    alias ls='lsd --group-dirs first'
+    alias tree='lsd --tree'
+    alias ll='ls -l --total-size'
+    alias la='ls -A'
+    alias lla='ls -lA'
+    alias l='ls -F'
 
-  # top to ytop
-  alias top='bpytop'
+    # top to ytop
+    alias top='bpytop'
 
-  # Show public IP
-  alias myip='curl http://ipecho.net/plain; echo'
+    # Show public IP
+    alias myip='curl http://ipecho.net/plain; echo'
 
-  # cat & less to bat
-  #alias bat='bat --theme=ansi-$([ "$COLOR_SCHEME" = "light" ] && echo "light" || echo "dark")'
-  alias cat='bat --pager=never'
-  alias less='bat'
+    # cat & less to bat
+    #alias bat='bat --theme=ansi-$([ "$COLOR_SCHEME" = "light" ] && echo "light" || echo "dark")'
+    alias cat='bat --pager=never'
+    alias less='bat'
 
-  # cowsay alias
-  alias cs='cowsay'
+    # cowsay alias
+    alias cs='cowsay'
 
-  # nnn alias
-  alias n='nnn -e -H'
+    # nnn alias
+    alias n='nnn -e -H'
 
-  # nvim alias
-  alias v='nvim'
+    # nvim alias
+    alias v='nvim'
 
-  # TEXMFDIST definition and tlmgr alias
-  export TEXMFDIST="/usr/share/texmf-dist"
-  alias tlmgr='$TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
+    # TEXMFDIST definition and tlmgr alias
+    export TEXMFDIST="/usr/share/texmf-dist"
+    alias tlmgr='$TEXMFDIST/scripts/texlive/tlmgr.pl --usermode'
 
-  # Kitty kittens
-  alias ktn='kitty +kitten'
+    # Kitty kittens
+    alias ktn='kitty +kitten'
+
+    # make pipenv use the pyenv python ver
+    alias pipenv-install='pipenv --python "$(pyenv which python)" install'
 
 # pyenv stuff
 eval "$(pyenv init -)"
 
-# pipx completion
-autoload -U +X bashcompinit && bashcompinit
-eval "$(register-python-argcomplete pipx)"
+# Completions
+    # pipx completion
+    autoload -U +X bashcompinit && bashcompinit
+    eval "$(register-python-argcomplete pipx)"
 
-# kitty completions
-autoload -Uz compinit
-compinit
-# Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+    # pipenv
+    #eval "$(pipenv --completion)"
+
+    # kitty completions
+    autoload -Uz compinit
+    compinit
+    # Completion for kitty
+    kitty + complete setup zsh | source /dev/stdin
 
 # zsh history stuff
 export HISTFILE="$XDG_DATA_HOME"/zsh/zsh_history

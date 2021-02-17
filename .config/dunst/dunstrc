@@ -212,7 +212,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 5
+    corner_radius = 4
 
     ### Legacy
 
@@ -380,10 +380,15 @@
 #    summary = "foobar"
 #    format = ""
 
-#[history-ignore]
+[history-ignore-PowerManager]
 #    # This notification will not be saved in history
-#    summary = "foobar"
-#    history_ignore = yes
+     summary = "*Power\ Manager*"
+     history_ignore = yes
+
+[history-ignore-nm-applet]
+#    # This notification will not be saved in history
+     desktop_entry="nm-applet"
+     history_ignore = yes
 
 #[skip-display]
 #    # This notification will not be displayed, but will be included in the history

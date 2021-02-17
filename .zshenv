@@ -54,12 +54,8 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
-# pipenv stuff
-	# create venv in proj directory
-	export PIPENV_VENV_IN_PROJECT=1
-
-	# make pipenv use the pyenv python ver
-	export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+# pipenv venv dir in project dir
+export PIPENV_VENV_IN_PROJECT=1
 
 # Path for pipx
 export PATH="$PATH:/home/yoav/.local/bin"
