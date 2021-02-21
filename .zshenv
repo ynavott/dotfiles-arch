@@ -66,6 +66,8 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 # Path for Scripts
 export PATH="$HOME/Scripts/bin:$PATH"
 
+# cowsay
+export COWPATH="/usr/share/cows:/usr/local/share/cowsay-files/cows"
 # fzf stuff
     # use fd instead of find for cleaner data
     export FZF_DEFAULT_COMMAND='fd -H --type f'

@@ -117,6 +117,9 @@ source $ZSH/oh-my-zsh.sh
 
 # --------------------------------- MANUAL STUFF -----------------------------------
 # Aliases
+    # doas
+    alias -g sudo='doas'
+
     # color
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
