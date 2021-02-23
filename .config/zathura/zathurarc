@@ -9,8 +9,8 @@ set selection-clipboard clipboard
 set adjust-open best-fit
 
 # Window size
-set window-height 900
-set window-width 635
+set window-height 1022
+set window-width 724
 
 # Keybinds
 map <C-i> zoom in
