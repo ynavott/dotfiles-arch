@@ -17,6 +17,9 @@
 #	helper = cache --timeout=7200
 [credential "https://github.com"]
 	username = ynavott
+[credential "https://gitlab.com"]
+	username = ynavott
+
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
 [init]
